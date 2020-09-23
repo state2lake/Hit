@@ -133,4 +133,10 @@
       <Name>Hitt</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\proficon.png" />
+    <BundleResource Include="Resources\trophyicon.png" />
+    <BundleResource Include="Resources\trophyicon30.png" />
+    <BundleResource Include="Resources\trophyicon40.png" />
+  </ItemGroup>
 </Project>

@@ -11,5 +11,6 @@ namespace Hitt.View
         {
             InitializeComponent();
         }
+        
     }
 }

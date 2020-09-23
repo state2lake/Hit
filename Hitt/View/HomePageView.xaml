@@ -1,6 +1,19 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Hitt.View.HomePageView">
-    <ContentPage.Content>
-     
-    </ContentPage.Content>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Hitt.View.HomePageView">
+
+    <!-- <NavigationPage.TitleView>
+        <StackLayout>
+            <Grid>
+              <Image Source="proficon.png"
+                     VerticalOptions="CenterAndExpand"
+                     HorizontalOptions="Start"
+                     Grid.Column="0"/>
+            </Grid>
+        </StackLayout>
+    </NavigationPage.TitleView> -->
+    <Label Text="Home Page" />
+   
 </ContentPage>
