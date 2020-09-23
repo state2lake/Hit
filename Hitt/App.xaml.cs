@@ -1,4 +1,5 @@
 ﻿using System;
+using Hitt.View;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,7 @@ namespace Hitt
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new HomePageView();
         }
 
         protected override void OnStart()
