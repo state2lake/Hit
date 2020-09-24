@@ -19,6 +19,8 @@
     <Folder Include="View\" />
     <Folder Include="Model\" />
     <Folder Include="Navigation\" />
+    <Folder Include="ViewModel\Base\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Navigation\MainMasterDetailsPage.xaml.cs">
