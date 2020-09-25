@@ -14,13 +14,12 @@ namespace Hitt.ViewModel
     public class MainMasterDetailViewModel : BaseViewModel
     {
         public ICommand SelectedCommand => new Command(async () => await SelectedCommandAsync());
-        private ObservableCollection<MenuItems> menuItems;
-        ObservableCollection<MenuItems> MenuItem = new ObservableCollection<MenuItems>();
+        ObservableCollection<MenuItems> menuItems = new ObservableCollection<MenuItems>();
+        public ObservableCollection<MenuItems> MenuItem { get { return menuItems; } }
 
         public MainMasterDetailViewModel()
         {
             AddItemsToMenuItems();
-
         }
 
         public async Task SelectedCommandAsync()
@@ -29,7 +28,9 @@ namespace Hitt.ViewModel
         }
         public void AddItemsToMenuItems()
         {
-            MenuItem.Add(new MenuItems { Title = "Settings" });
+            menuItems.Add(new MenuItems { Title="Settings" });
+            menuItems.Add(new MenuItems { Title = "Expert Tips" });
+
         }
     }
 }
