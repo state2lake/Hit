@@ -13,15 +13,26 @@ namespace Hitt.ViewModel
 {
     public class MainMasterDetailViewModel : BaseViewModel
     {
+        #region ICommands
+
         public ICommand SelectedCommand => new Command(async () => await SelectedCommandAsync());
+
+        #endregion ICommands
+
+        #region props
+
         ObservableCollection<MenuItems> menuItems = new ObservableCollection<MenuItems>();
         public ObservableCollection<MenuItems> MenuItem { get { return menuItems; } }
+
+        #endregion
+
 
         public MainMasterDetailViewModel()
         {
             AddItemsToMenuItems();
         }
 
+        #region public 
         public async Task SelectedCommandAsync()
         {
             await NavigationService.PushAsync(new ExpertTips());
@@ -30,7 +41,7 @@ namespace Hitt.ViewModel
         {
             menuItems.Add(new MenuItems { Title="Settings" });
             menuItems.Add(new MenuItems { Title = "Expert Tips" });
-
         }
+        #endregion
     }
 }

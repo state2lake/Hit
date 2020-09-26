@@ -10,7 +10,6 @@ namespace Hitt.Navigation
 {
     public partial class MainMasterDetailsPage : MasterDetailPage
     {
-
       
 
         public MainMasterDetailsPage()
@@ -24,5 +23,7 @@ namespace Hitt.Navigation
             this.BindingContext = new MainMasterDetailViewModel();
 
         }
+
+
     }
 }
