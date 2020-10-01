@@ -2,13 +2,14 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:resx="clr-namespace:Hitt.Resources"
     x:Class="Hitt.View.HomePageView">
 
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Padding="5,25,5,0">
                 <StackLayout>
-                    <Label Text="Quick Workouts:" FontAttributes="Bold" FontSize="Large"/>
+                    <Label Text="{x:Static resx:HittStringResources.quick_workouts}" FontAttributes="Bold" FontSize="Large"/>
                     <CarouselView HeightRequest="250">
                         <CarouselView.ItemTemplate>
                             <DataTemplate>
@@ -25,7 +26,7 @@
                            HeightRequest="1"
                            Color="#5b5d68"/>
                 <StackLayout>
-                    <Label Text="For You:" FontAttributes="Bold" FontSize="Large" />
+                    <Label Text="{x:Static resx:HittStringResources.quick_workouts}" FontAttributes="Bold" FontSize="Large" />
                     <CarouselView HeightRequest="250">
                         <CarouselView.ItemTemplate>
                             <DataTemplate>
@@ -42,7 +43,7 @@
                            HeightRequest="1"
                            Color="#5b5d68"/>
                 <StackLayout>
-                    <Label Text="Recently Watched:" FontAttributes="Bold" FontSize="Large" />
+                    <Label Text="{x:Static resx:HittStringResources.recently_watched}" FontAttributes="Bold" FontSize="Large" />
                     <CarouselView  HeightRequest="250">
                         <CarouselView.ItemTemplate>
                             <DataTemplate>

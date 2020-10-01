@@ -21,6 +21,7 @@
     <Folder Include="Navigation\" />
     <Folder Include="ViewModel\Base\" />
     <Folder Include="Services\" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Navigation\MainMasterDetailsPage.xaml.cs">
@@ -32,5 +33,14 @@
     <Compile Update="View\ExpertTips.xaml.cs">
       <DependentUpon>ExpertTips.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Resources\HittStringResources.Designer.cs">
+      <DependentUpon>HittStringResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\HittStringResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>HittStringResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
