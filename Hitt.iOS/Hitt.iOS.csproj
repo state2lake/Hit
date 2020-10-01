@@ -136,5 +136,7 @@
     <BundleResource Include="Resources\trophyicon40.png" />
     <BundleResource Include="Resources\usersettings24.png" />
     <BundleResource Include="Resources\usersettings48.png" />
+    <BundleResource Include="Resources\workoutgif.gif" />
+    <BundleResource Include="Resources\workoutgif1.gif" />
   </ItemGroup>
 </Project>

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using Hitt.ViewModel;
 using Xamarin.Forms;
 
 namespace Hitt.View
@@ -10,6 +10,7 @@ namespace Hitt.View
         public HomePageView()
         {
             InitializeComponent();
+            this.BindingContext = (new HomePageViewModel());
         }
         
     }

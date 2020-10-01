@@ -10,18 +10,41 @@
             <StackLayout Padding="5,25,5,0">
                 <StackLayout>
                     <Label Text="{x:Static resx:HittStringResources.quick_workouts}" FontAttributes="Bold" FontSize="Large"/>
-                    <CarouselView HeightRequest="250">
+                    <CarouselView HeightRequest="250" ItemsSource="{Binding QuickWorkout}" HorizontalScrollBarVisibility="Never" HorizontalOptions="CenterAndExpand">
                         <CarouselView.ItemTemplate>
                             <DataTemplate>
                                 <StackLayout>
-                                    <Frame>
+                                    <Frame HasShadow="True"
+                                       BorderColor="Transparent"
+                                       CornerRadius="5"
+                                       Margin="20"
+                                       HeightRequest="300"
+                                       WidthRequest="325"
+                                       HorizontalOptions="CenterAndExpand"
+                                       VerticalOptions="CenterAndExpand" >
+                                        <StackLayout >
+                                           <!--<Label Text="{Binding Title}"
+                                               FontAttributes="Bold"
+                                               FontSize="Large"
+                                               HorizontalOptions="Center"
+                                               VerticalOptions="Center" />
+                                             <Label Text="{Binding Description}"
+                                               FontAttributes="Bold"
+                                               FontSize="Large"
+                                               HorizontalOptions="Center"
+                                               VerticalOptions="Center"  />
+                                             <Label Text="{Binding Location}"
+                                               HorizontalOptions="Center" />  -->
+                                            <Image Source="workoutgif1.gif" IsAnimationPlaying="True"  HorizontalOptions="CenterAndExpand"
+                                               VerticalOptions="CenterAndExpand"  Margin="-20,-20,-20,0"/>
+                                        </StackLayout>
                                     </Frame>
                                 </StackLayout>
                             </DataTemplate>
                         </CarouselView.ItemTemplate>
                     </CarouselView>
                 </StackLayout>
-                 <BoxView   VerticalOptions="Center"
+                <BoxView   VerticalOptions="Center"
                            HorizontalOptions="FillAndExpand"
                            HeightRequest="1"
                            Color="#5b5d68"/>
