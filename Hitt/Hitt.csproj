@@ -23,6 +23,7 @@
     <Folder Include="Services\" />
     <Folder Include="Resources\" />
     <Folder Include="Model\Workouts\" />
+    <Folder Include="UserControls\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Navigation\MainMasterDetailsPage.xaml.cs">

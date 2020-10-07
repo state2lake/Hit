@@ -23,7 +23,10 @@ namespace Hitt.Navigation
             this.BindingContext = new MainMasterDetailViewModel();
 
         }
-
+        //private void SetMenuItemText()
+        //{
+        //    MenuItemView()
+        //}
 
     }
 }
