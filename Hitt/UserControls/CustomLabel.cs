@@ -8,6 +8,7 @@ namespace Hitt.UserControls
         public static readonly BindableProperty SelectableProperty = BindableProperty.Create("Selectable", typeof(bool), typeof(CustomLabel), false, BindingMode.Default);
         public CustomLabel()
         {
+
         }
 
         public bool Selectable
