@@ -16,7 +16,7 @@ namespace Hitt.ViewModel
         #region ICommands
 
         public ICommand SelectedCommand => new Command(async () => await SelectedCommandAsync());
-
+       
         #endregion ICommands
 
         #region props
@@ -24,6 +24,16 @@ namespace Hitt.ViewModel
         ObservableCollection<MenuItems> menuItems = new ObservableCollection<MenuItems>();
         public ObservableCollection<MenuItems> MenuItem { get { return menuItems; } }
 
+        private bool _isMenuItemEnabled = false;
+        public bool IsMenuItemEnabled
+        {
+            get => _isMenuItemEnabled;
+            set
+            {
+                _isMenuItemEnabled = value;
+                OnPropertyChanged();
+            }
+        }
         #endregion
 
 
@@ -35,7 +45,15 @@ namespace Hitt.ViewModel
         #region public 
         public async Task SelectedCommandAsync()
         {
-            await NavigationService.PushAsync(new ExpertTips());
+            IsMenuItemEnabled = true;
+           // await NavigationService.PushAsync(new );
+        }
+        public void HandleMenuItemEnabled()
+        {
+            if(IsMenuItemEnabled)
+            {
+
+            }
         }
         public void AddItemsToMenuItems()
         {

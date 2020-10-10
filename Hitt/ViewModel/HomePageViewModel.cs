@@ -2,12 +2,24 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using Hitt.Model.Workouts;
+using Hitt.ViewModel.Base;
 
 namespace Hitt.ViewModel
 {
-    public class HomePageViewModel
+    public class HomePageViewModel : BaseViewModel
     {
         readonly IList<QuickWorkouts> source;
+
+        private bool _isMenuItemSelected = false;
+        public bool IsMenuItemSelected
+        {
+            get => _isMenuItemSelected;
+            set
+            {
+                _isMenuItemSelected = value;
+                OnPropertyChanged();
+            }
+        }
 
         public ObservableCollection<QuickWorkouts> QuickWorkout { get; private set; }
 

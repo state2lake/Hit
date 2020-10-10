@@ -10,8 +10,8 @@ namespace Hitt.Navigation
 {
     public partial class MainMasterDetailsPage : MasterDetailPage
     {
-      
 
+        MainMasterDetailViewModel _mainMasterDetailViewModel = new MainMasterDetailViewModel();
         public MainMasterDetailsPage()
         {
             InitializeComponent();
@@ -23,10 +23,16 @@ namespace Hitt.Navigation
             this.BindingContext = new MainMasterDetailViewModel();
 
         }
-        //private void SetMenuItemText()
-        //{
-        //    MenuItemView()
-        //}
 
+        async void MenuItemView_ItemTapped_1(System.Object sender, Xamarin.Forms.ItemTappedEventArgs e)
+        {
+            // await _mainMasterDetailViewModel.SelectedCommandAsync();
+           
+        }
+
+        //void CustomLabel_Focused(System.Object sender, Xamarin.Forms.FocusEventArgs e)
+        //{
+        //    e.VisualElement.BackgroundColor = Color.Red;
+        //}
     }
 }

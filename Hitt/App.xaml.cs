@@ -12,7 +12,7 @@ namespace Hitt
         {
             InitializeComponent();
 
-            MainPage = new MainMasterDetailsPage();
+            this.MainPage = new  MainMasterDetailsPage();
         }
 
         protected override void OnStart()
