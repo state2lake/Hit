@@ -23,31 +23,17 @@ namespace Hitt.iOS.Renderers
             {
                 var customLabel = e.NewElement as CustomLabel;
 
-                //if(customLabel.Selectable)
-                //{
-                //  //  Control.UserInteractionEnabled = true;
-                //  //  Control.AddGestureRecognizer(new UILongPressGestureRecognizer(() =>
-                //  //{
-                //  //    if (Control.TextColor == Color.LightGray.ToUIColor())
-                //  //    {
-                //  //        Control.TextColor = Color.Black.ToUIColor();
-                //  //    }
-                //  //    else
-                //  //    {
-                //  //        Control.TextColor = Color.LightGray.ToUIColor();
-                //  //    }
-                //  //}));
-                //}
-                if(customLabel.Selectable)
-                {
+                
                     Control.UserInteractionEnabled = true;
                     Control.AddGestureRecognizer(new UITapGestureRecognizer(() =>
                     {
-                        Control.Layer.BackgroundColor = Color.Red.ToCGColor();
+                        // Control.Layer.BackgroundColor = Color.Red.ToCGColor();
+                         customLabel.TranslateTo(-100, 0, 1000);    // Move image left
+                         customLabel.TranslateTo(-100, -100, 1000); // Move image up <- you are looking for this one
+                         customLabel.TranslateTo(100, 100, 2000);   // Move image diagonally down and right
+                         customLabel.TranslateTo(0, 100, 1000);     // Move image left
+                         customLabel.TranslateTo(0, 0, 1000);       // Move image up
                     }));
-
-                   
-                }
             }
         }
         protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)

@@ -45,8 +45,7 @@ namespace Hitt.ViewModel
         #region public 
         public async Task SelectedCommandAsync()
         {
-            IsMenuItemEnabled = true;
-           // await NavigationService.PushAsync(new );
+            await NavigationService.PushAsync(new Settings() );
         }
         public void HandleMenuItemEnabled()
         {
@@ -59,6 +58,7 @@ namespace Hitt.ViewModel
         {
             menuItems.Add(new MenuItems { Title="Settings" });
             menuItems.Add(new MenuItems { Title = "Expert Tips" });
+            menuItems.Add(new MenuItems { Title = "Your Profile" });
         }
         #endregion
     }

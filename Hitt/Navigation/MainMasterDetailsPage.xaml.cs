@@ -24,15 +24,11 @@ namespace Hitt.Navigation
 
         }
 
-        async void MenuItemView_ItemTapped_1(System.Object sender, Xamarin.Forms.ItemTappedEventArgs e)
+        async void MenuItemView_ItemTapped(System.Object sender, Xamarin.Forms.ItemTappedEventArgs e)
         {
-            // await _mainMasterDetailViewModel.SelectedCommandAsync();
-           
+            await _mainMasterDetailViewModel.SelectedCommandAsync();
         }
 
-        //void CustomLabel_Focused(System.Object sender, Xamarin.Forms.FocusEventArgs e)
-        //{
-        //    e.VisualElement.BackgroundColor = Color.Red;
-        //}
+
     }
 }
