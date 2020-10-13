@@ -26,9 +26,9 @@
     <Folder Include="UserControls\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Navigation\MainMasterDetailsPage.xaml.cs">
-      <DependentUpon>MainMasterDetailsPage.xaml</DependentUpon>
-    </Compile>
+    <Compile Remove="Navigation\MainMasterDetailsPage.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Update="View\Settings.xaml.cs">
       <DependentUpon>Settings.xaml</DependentUpon>
     </Compile>
@@ -38,6 +38,9 @@
     <Compile Update="Resources\HittStringResources.Designer.cs">
       <DependentUpon>HittStringResources.resx</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Navigation\MainMasterDetailsPage.xaml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Resources\HittStringResources.resx">
