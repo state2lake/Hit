@@ -52,9 +52,11 @@ namespace Hitt.ViewModel
         public MainMasterDetailViewModel()
         {
             AddItemsToMenuItems();
+            GetFollowerCount();
         }
 
-        #region public 
+        #region public
+
         public async Task SelectedCommandAsync()
         {
             await NavigationService.PushAsync(new Settings() );
@@ -71,6 +73,15 @@ namespace Hitt.ViewModel
             menuItems.Add(new MenuItems { Title="Settings" });
             menuItems.Add(new MenuItems { Title = "Expert Tips" });
             menuItems.Add(new MenuItems { Title = "Your Profile" });
+        }
+        #endregion
+
+        #region private methods
+        private void GetFollowerCount()
+        {
+            //TODO: Have not implemented follow feature yet, therefore it is hardcoded for UI purposes
+            int testCount = 2;
+            FollowerCount = testCount + " followers";
         }
         #endregion
     }
