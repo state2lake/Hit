@@ -24,6 +24,8 @@ namespace Hitt.ViewModel
         ObservableCollection<MenuItems> menuItems = new ObservableCollection<MenuItems>();
         public ObservableCollection<MenuItems> MenuItem { get { return menuItems; } }
 
+        public string FollowerCount { get; } = "  Followers";
+
         private bool _isMenuItemEnabled = false;
         public bool IsMenuItemEnabled
         {
